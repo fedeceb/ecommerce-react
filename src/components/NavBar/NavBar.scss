@@ -1,24 +1,40 @@
-
-.container {
-    padding: 0px 50px 0px 50px;
-}
-
-
 .header-navbar {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 100px;
+    height: 100px;
+    width: 100%;
     background-color: #e0e2db;
-    justify-content: center;
-    align-items: center;
-    column-gap: 45%;
 }
 
 .navbar-h1 {
+    font-size: 30px;
+    margin-left: 50px;
     display: flex;
-    padding-left: -20px;
+    align-items: center;
+    
 }
 
-.ul-list {
+.navbar-list {
     display: flex;
-    column-gap: 30px;
-    list-style: none;
+    ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        column-gap: 50px;
+        li button {
+            font-size: 18px;
+            border: none;
+            background-color: #e0e2db;
+        }
+    }
+}
+
+.cart-widgets {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    column-gap: 20px;
+
 }
