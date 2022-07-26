@@ -1,30 +1,31 @@
 import {useState} from 'react'
-import './ItemProduct'
+import './ItemProduct.scss'
 
-const ItemCount = () => {
-    const [count, setCount] = useState(1)
+const ItemCount = ({initial, stock, onAdd}) => {
+    const [count, setCount] = useState(initial)
 
-    
     const addNumber = () => {
-        if(stock>count)
-        {
+        if(stock > count){
             setCount(count + 1)
         }
-        
     }
     
-    
-
     const removeNumber = () => {
-        setCount(count - 1)
+        if(count > initial){
+            setCount(count - 1)
+        }
     }
 
     return (
         <div className='countProd'>
-            <button onClick={removeNumber}>-</button>
-            <p>{count}</p>
-            <button onClick={addNumber}>+</button>
+            <div className='countBtn'>
+                <button onClick={removeNumber}>-</button>
+                <p>{count}</p>
+                <button onClick={addNumber}>+</button>
+            </div>
+            <button disabled={stock <= 0} onClick={() => onAdd(count)}>Agregar al carrito</button>
         </div>
+        
     )
 }
 

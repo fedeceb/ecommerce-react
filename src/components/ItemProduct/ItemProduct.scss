@@ -21,18 +21,21 @@
 
 .countProd {
     display: flex;
-    /* height: 77px; */
+    flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
+    p {
+        font-size: 22px;
+    }
+    button {
+        padding: 10px;
+        font-size: 20px;
+        margin: 10px;
+    }
 }
     
-.countProd p {
-    font-size: 22px;
-}
-    
-.countProd button {
-    padding: 10px;
-    font-size: 20px;
-    margin: 10px;
+.countBtn {
+    display: flex;
+    align-items: center;
 }
