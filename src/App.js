@@ -10,8 +10,8 @@ function App() {
       <NavBar/>
       <div className="container">
         <ItemListContainer section="Productos en oferta"/>
-        <ItemListContainer section="Productos de temporada"/>
-        <ItemListContainer section="Productos más comprados"/>
+        {/*<ItemListContainer section="Productos de temporada"/>*/}
+        {/*<ItemListContainer section="Productos más comprados"/>*/}
       </div>
       {/*<Modal title="Modal de registro">
         <h2>Modal de registro</h2>

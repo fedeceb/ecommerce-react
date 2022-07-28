@@ -1,8 +1,10 @@
 import ItemCount from './ItemCount'
 import './ItemProduct.scss'
 
-const ItemProduct = ({title, price, image, stock}) => {
+const ItemProduct = ({data}) => {
    
+    const {title, price, image, stock} = data
+
     const onAdd = (cantidad) => {
         console.log(`compraste ${cantidad} unidades`)
     }
