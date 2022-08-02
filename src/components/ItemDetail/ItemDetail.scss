@@ -1,0 +1,37 @@
+.detail-container {
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+.img-detail {
+    width: 50%;
+    img{
+        margin-left: 50px;
+        height: 50%;
+        width: auto;
+    } 
+}
+
+.detail-content {
+    display: flex;
+    flex-direction: column;
+    padding: 150px 0px 0px 0px;
+    h2 {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+    span {
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+    
+    p {
+        font-size: 20px;
+        border-top: 1px;
+        border-spacing: 15px;
+        border-top-style: solid;
+        border-top-color: gray;
+    }
+}
