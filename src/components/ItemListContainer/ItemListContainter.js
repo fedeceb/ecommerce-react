@@ -3,7 +3,7 @@ import products from "../utils/products.mock"
 import './ItemListContainer.scss'
 import ItemList from "../ItemList/ItemList"
 
-const ItemListContainer = ({section}) => {
+const ItemListContainer = () => {
 
     const [listProd, setListProd] = useState([])
 
@@ -22,10 +22,11 @@ const ItemListContainer = ({section}) => {
     }, [])
 
     return (
-        <div className='list-products'>
-            <h2>{section}</h2>
-                 <ItemList dataProds={listProd}/>
+        <>
+        <div className='container'>
+            <ItemList dataProds={listProd}/>
         </div>
+        </>
     )
 }
 

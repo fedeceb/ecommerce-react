@@ -12,6 +12,7 @@ const ItemDetail = ({ data }) => {
             <div className='detail-content'>
                 <h2>{title}</h2>
                 <span>$ {price}</span>
+                <button>Agregar a carrito</button>
                 <p>{description}</p>
             </div>
         </div>
