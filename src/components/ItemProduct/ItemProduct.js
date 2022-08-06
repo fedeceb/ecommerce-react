@@ -12,13 +12,15 @@ const ItemProduct = ({data}) => {
 
     return (
         <div className= "item-product">  
-        <Link to={`/productos/${id}`} />
+            <Link to={`/productos/${id}`}>
             <img src={`/assets/${image}`} />
             <p>{title}</p>
             <span>$ {price}</span>
-            <ItemCount initial={1} stock={stock} onAdd={onAdd}/>
-            <p>Stock disponible: {stock}</p>
+            </Link>
+            {/*<ItemCount initial={1} stock={stock} onAdd={onAdd}/>
+            <p>Stock disponible: {stock}</p>*/}
         </div>
+        
     )
 }
 

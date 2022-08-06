@@ -2,7 +2,13 @@ import ItemListContainer from "../components/ItemListContainer/ItemListContainte
 
 const Marcas = () => {
     return (
-        <></>
+        <>
+        <div className="marcas-container">
+            <div>
+                <ItemListContainer />
+            </div>
+        </div>
+        </>
     )
 }
 

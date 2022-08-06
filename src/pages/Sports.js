@@ -2,7 +2,7 @@ import ItemListContainer from "../components/ItemListContainer/ItemListContainte
 
 const Sports = () => {
     return (
-        <></>
+        <><h1>Deportes</h1></>
     )
 }
 

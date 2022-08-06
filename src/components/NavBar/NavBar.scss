@@ -13,6 +13,10 @@
     margin-left: 50px;
     display: flex;
     align-items: center;
+    h1 {
+        text-decoration: none;
+        color: black;
+    }
     
 }
 
@@ -31,10 +35,22 @@
     }
 }
 
+ul .sub-marcas {
+    display: flex;
+    position: absolute;
+}
+
 .cart-widgets {
     display: flex;
     align-items: center;
     margin-right: 50px;
     column-gap: 20px;
 
+}
+
+.icons-widget {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    text-decoration: none;
 }
