@@ -1,14 +1,9 @@
-import ItemCount from './ItemCount'
 import './ItemProduct.scss'
 import { Link } from 'react-router-dom'
 
 const ItemProduct = ({data}) => {
    
-    const {title, price, image, stock, id} = data
-
-    const onAdd = (cantidad) => {
-        console.log(`compraste ${cantidad} unidades`)
-    }
+    const {title, price, image, id} = data
 
     return (
         <div className= "item-product">  
@@ -16,11 +11,9 @@ const ItemProduct = ({data}) => {
             <img src={`/assets/${image}`} />
             <p>{title}</p>
             <span>$ {price}</span>
+            <p>ENVIOS GRATIS</p>
             </Link>
-            {/*<ItemCount initial={1} stock={stock} onAdd={onAdd}/>
-            <p>Stock disponible: {stock}</p>*/}
         </div>
-        
     )
 }
 
