@@ -15,18 +15,16 @@ const NavBar = () => {
         <div className='navbar-list'>
             <ul>
                 <Link to="/productos"><li><button>Productos</button></li></Link>
-                <Link to="/category">
                     <li><button>Marcas</button>
                         <ul className='sub-marcas'>
-                            <Link to="/category/" ><li><button>Adidas</button></li></Link>
-                            <Link to="/category/" ><li><button>Converse</button></li></Link>
-                            <Link to="/category/" ><li><button>New Balance</button></li></Link>
-                            <Link to="/category/" ><li><button>Nike</button></li></Link>
-                            <Link to="/category/" ><li><button>Puma</button></li></Link>
-                            <Link to="/category/" ><li><button>Vans</button></li></Link>
+                            <Link to="/category/adidas" ><li><button>Adidas</button></li></Link>
+                            <Link to="/category/converse" ><li><button>Converse</button></li></Link>
+                            <Link to="/category/new-balance" ><li><button>New Balance</button></li></Link>
+                            <Link to="/category/nike" ><li><button>Nike</button></li></Link>
+                            <Link to="/category/puma" ><li><button>Puma</button></li></Link>
+                            <Link to="/category/vans" ><li><button>Vans</button></li></Link>
                         </ul>
                     </li>
-                </Link>
                 <Link to="/deportes"><li><button>Deportes</button></li></Link>
                 <Link to="/contacto"><li><button>Contacto</button></li></Link>
             </ul>

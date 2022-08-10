@@ -8,11 +8,18 @@ const ItemListContainer = () => {
 
     const [listProd, setListProd] = useState([])
 
-    /*const {marcasId} = useParams()*/
+    const {categoryId} = useParams()
+
+    const filterByCategory = products.filter((products) => products.category === categoryId)
 
     const getProducts = new Promise ((resolve, reject) => {
         setTimeout( () => {
-            resolve (products)
+            if (categoryId) {
+                resolve(filterByCategory)
+            }
+            else {
+                resolve (products)
+            }
         }, 2000)
     })
 
@@ -20,17 +27,8 @@ const ItemListContainer = () => {
         getProducts
             .then ((res) => {
                 //console.log("Productos: ", res)
-                setListProd(res)
-            /*filterByMarcasId()*/
-            })
-    }, [])
-
-    /*const filterByMarcasId = () => {
-        products.some ((products) => {
-            if(products.marca == marcasId)
-                setListProd(products)
-        })
-    }*/
+                setListProd(res)}
+    )}, [filterByCategory])
 
     return (
         <>
