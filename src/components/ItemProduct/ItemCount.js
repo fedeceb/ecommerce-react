@@ -1,7 +1,11 @@
-import {useState} from 'react'
+import { useState, useContext } from 'react'
+import { CartContext } from '../../context/CartContext'
 import './ItemProduct.scss'
 
-const ItemCount = ({setQuantitySelected, stock}) => {
+const ItemCount = ({setQuantitySelected, stock, cartData }) => {
+
+    const { addItem } = useContext( CartContext )
+
     const [count, setCount] = useState(1)
 
     const addNumber = () => {
@@ -17,6 +21,8 @@ const ItemCount = ({setQuantitySelected, stock}) => {
 
     const onAdd = () => {
         setQuantitySelected (count)
+        addItem(cartData)
+        //console.log("se agrego al carrito desde detalle", cartData)
     }
 
     return (

@@ -2,7 +2,6 @@ import SwiperJS from "../components/Swiper.pagination-dinamic/swiper"
 import SwiperInfiniteLoop from "../components/Swiper.infinite-loop-slides-group/swiper"
 import './Home.scss'
 
-// primero, crear estructura en pag "App", y llamar a "home" 
 const Home = () => {
     return (
         <>
