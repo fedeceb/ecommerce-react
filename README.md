@@ -15,3 +15,8 @@
 ## DESAFIO: Cart Context
 
     -   La acumulación de diferentes productos funcionan en el nuevo array, el unico problema en el array es que "quantity" aparece como "undefined / NaN"
+
+
+## DESAFIO: Cart View
+
+    - Falta solucionar funcion "total de compra" y el acumulado.

@@ -7,7 +7,7 @@ import Marcas from './pages/Marcas';
 import Sports from './pages/Sports';
 import Contact from './pages/Contact';
 import Detail from './pages/Detail';
-import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
 import CartProvider from './context/CartContext';
 
 
@@ -26,7 +26,7 @@ function App() {
             <Route path='/deportes' element={<Sports />} />
             <Route path='' element={''}/> {/* desgloce de deportes */}
             <Route path='/contact' element={<Contact />} />
-            <Route path='/cart' element={<Cart />} />
+            <Route path='/cart' element={<Checkout />} />
             <Route path='*' element={<h1>ERROR 404 - página no encontrada</h1>}/> {/*crear una pagina aparte para estos problemas*/}
           </Routes>
       </CartProvider>

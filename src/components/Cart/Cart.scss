@@ -1,0 +1,23 @@
+
+
+.body-carrito{
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    column-gap: 50px;
+}
+
+.detalle-carrito {
+    div {
+        display: flex;
+    }
+
+}
+
+
+.detalleTotal-carrito {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
