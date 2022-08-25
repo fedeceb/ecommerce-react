@@ -21,7 +21,7 @@ const ItemCount = ({setQuantitySelected, stock, cartData }) => {
 
     const onAdd = () => {
         setQuantitySelected (count)
-        addItem(cartData)
+        addItem(cartData, count)
         //console.log("se agrego al carrito desde detalle", cartData)
     }
 
