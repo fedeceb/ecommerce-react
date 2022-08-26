@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { CartContext } from "../../context/CartContext"
 import ItemCart from "../ItemCart/ItemCart"
 import '../Cart/Cart.scss'
+import DatosDeCompraModal from "../ModalDatos/DatosDeCompra"
 
 const Cart = () => {
 
@@ -30,6 +31,9 @@ const Cart = () => {
                 <div>
                     <p>PRECIO TOTAL:</p>
                     <button>CALCULAR ENVIO</button>
+                </div>
+                <div>
+                    <button> <DatosDeCompraModal>FINALIZAR COMPRA</DatosDeCompraModal> </button>
                 </div>
             </div>
         </div>

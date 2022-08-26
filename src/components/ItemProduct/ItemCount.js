@@ -28,9 +28,9 @@ const ItemCount = ({setQuantitySelected, stock, cartData }) => {
     return (
         <div className='countProd'>
             <div className='countBtn'>
-                <button onClick={removeNumber}>-</button>
+                <button className='btn-contador' onClick={removeNumber}>-</button>
                 <p className='p-contador'>{count}</p>
-                <button onClick={addNumber}>+</button>
+                <button className='btn-contador' onClick={addNumber}>+</button>
             </div>
             <button className='btn-addCarrito' onClick={onAdd} >Agregar al carrito</button>
         </div>

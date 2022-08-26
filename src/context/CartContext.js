@@ -5,8 +5,9 @@ export const CartContext = createContext();
 const CartProvider = ({ children }) => {
 
     const [cart, setCart] = useState([])
+    const [totalPrice, setTotalPrice] = useState (0)
     //const [totalProducts, setTotalProducts] = useState(0)
-    console.log("el famoso carrito: ", cart)
+    //console.log("el famoso carrito: ", cart)
 
     const addItem = (item, quantity) => {
         let newCart;
@@ -14,6 +15,7 @@ const CartProvider = ({ children }) => {
         if ( product ) {  //si se encuentra en el carrito
             //setTotalProducts(totalProducts + product.quantity)
             product.quantity += quantity;  // que sume a la cantidad (del props) a la cantidad existente
+            setTotalPrice (totalPrice + product.price)
             newCart = [ ...cart ];  // la info se guarda en el nuevo carrito
         }
         else {
@@ -40,6 +42,7 @@ const CartProvider = ({ children }) => {
             removeItem,
             clearCart,
             isInCart,
+            totalPrice
             //totalProducts
         }}>
             {children} {/* -- es el resto de la aplicación -- */}
