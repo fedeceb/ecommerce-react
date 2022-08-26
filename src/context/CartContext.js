@@ -15,12 +15,12 @@ const CartProvider = ({ children }) => {
         if ( product ) {  //si se encuentra en el carrito
             //setTotalProducts(totalProducts + product.quantity)
             product.quantity += quantity;  // que sume a la cantidad (del props) a la cantidad existente
-            setTotalPrice (totalPrice + product.price)
             newCart = [ ...cart ];  // la info se guarda en el nuevo carrito
         }
         else {
             product = { ...item, quantity: quantity };  // si no se encontro, se crea un nuevo producto
             newCart = [ ...cart, product ];  // y se guarda en el nuevo carrito
+            setTotalPrice (totalPrice + item.price * quantity)
         }
         setCart (newCart)
     }
