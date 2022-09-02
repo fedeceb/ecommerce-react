@@ -1,5 +1,6 @@
 import './App.scss';
 import NavBar from './components/NavBar/NavBar';
+import Footer from './components/Footer/Footer';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './pages/Home';
 import Products from './pages/Products';
@@ -29,6 +30,7 @@ function App() {
             <Route path='/cart' element={<Checkout />} />
             <Route path='*' element={<h1>ERROR 404 - página no encontrada</h1>}/> {/*crear una pagina aparte para estos problemas*/}
           </Routes>
+        <Footer />
       </CartProvider>
         {/*<ItemDetailContainer />*/}
       {/*<Modal title="Modal de registro">
