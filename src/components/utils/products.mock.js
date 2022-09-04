@@ -232,6 +232,9 @@ const products =
         price: 32999,
         description: "Puede que estemos muy lejos de los años 90, pero estas zapatillas Ozelia tienen sus raíces en esa era ruidosa y experimental. Inspiradas en los archivos de adidas, las atrevidas zapatillas tienen una construcción gruesa que se trata de llamar la atención. Son elegantes con un look rápido, y cuando tus días son acelerados, la amortiguación Adiprene te ayuda en el lado de la comodidad. Este producto está hecho con contenido reciclado como parte de nuestra ambición de terminar con los desechos plásticos. El 20% de las piezas utilizadas para hacer la parte superior se fabrican con un contenido reciclado mínimo del 50%.",
         image: 'adidas-ozelia-white.jpg',
+        image1: 'adidas-ozelia-white-1.jpg',
+        image2: 'adidas-ozelia-white-2.jpg',
+        image3: 'adidas-ozelia-white-3.jpg',
         stock: 5
     },
     {

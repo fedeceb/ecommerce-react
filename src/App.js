@@ -5,7 +5,6 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './pages/Home';
 import Products from './pages/Products';
 import Marcas from './pages/Marcas';
-import Sports from './pages/Sports';
 import Contact from './pages/Contact';
 import Detail from './pages/Detail';
 import Checkout from './pages/Checkout';
@@ -24,8 +23,6 @@ function App() {
             <Route path='/productos' element={<Products />} />
             <Route path='/productos/:id' element={<Detail />} />
             <Route path='/category/:categoryId' element={<Marcas />}/> {/* desgloce de marcas */}
-            <Route path='/deportes' element={<Sports />} />
-            <Route path='' element={''}/> {/* desgloce de deportes */}
             <Route path='/contact' element={<Contact />} />
             <Route path='/cart' element={<Checkout />} />
             <Route path='*' element={<h1>ERROR 404 - página no encontrada</h1>}/> {/*crear una pagina aparte para estos problemas*/}

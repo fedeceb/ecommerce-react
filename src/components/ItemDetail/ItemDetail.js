@@ -14,12 +14,17 @@ const ItemDetail = ({ data }) => {
 
     const [quantitySelected, setQuantitySelected] = useState (0)
 
-    const {title, price, image, description, stock} = data
+    const {title, price, image, image1, image2, image3, description, stock} = data
 
     return (
         <div className='detail-container'>
             <div className='img-detail'>
+                {/*<MinimalCarrousel data={image}/>*/}
                 <img src={`/assets/${image}`} />
+                <img src={`/assets/${image1}`} />
+                <img src={`/assets/${image2}`} />
+                <img src={`/assets/${image3}`} />
+
             </div>
             <div className='detail-content'>
                 <h2>{title}</h2>
@@ -34,7 +39,7 @@ const ItemDetail = ({ data }) => {
                     <p> <RedeemIcon /> Cambios gratis en sucursales <CambiosBasicModal>ver mas...</CambiosBasicModal></p>
                     <p> <ShoppingBagIcon /> Retiros express en tiendas</p>
                     <p> <LocalShippingIcon /> Envíos gratis a partir de $40.000 <EnviosBasicModal>ver mas..</EnviosBasicModal></p>
-                </div>
+            </div>
             </div>
 
         </div>
