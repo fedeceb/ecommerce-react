@@ -1,6 +1,8 @@
 footer {
     height: 300px;
-    background-color: antiquewhite;
+    width: 100%;
+    background-color: #020202;
+    padding-top: 50px;
 }
 
 .f-container {
@@ -14,6 +16,7 @@ footer {
         flex-direction: column;
         .h2-footer {
             margin-left: 0px;
+            color: white;
         }
         ul {
             margin-top: 35px;
@@ -21,9 +24,10 @@ footer {
         }
         li {
             margin-bottom: 15px;
+            color: white;
             a {
                 font-size: 15px;
-                color: black;
+                color: white;
                 font-weight: 300;
                 text-decoration: none;
                 text-transform: capitalize;
@@ -31,12 +35,13 @@ footer {
                 transition: all 0.3s ease;
             }
             a:hover {
-                color: violet;
+                color: aqua;
                 padding-left: 8px;
             }
         }
         p {
             margin-top: 10px;
+            color: white;
         }
     }
 }

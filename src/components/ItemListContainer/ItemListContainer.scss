@@ -1,14 +1,13 @@
-h2 {
-    margin-top: 50px;
-    margin-left: 50px;
-}
-
 .container {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-top: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    row-gap: 35px;
+    column-gap: 25px;
 }
 
 .item-product * {

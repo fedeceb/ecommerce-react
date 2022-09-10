@@ -14,31 +14,6 @@ const ItemListContainer = () => {
 
     const {categoryId} = useParams()
 
-    //const filterByCategory = products.filter((products) => products.category === categoryId)
-
-    /*const getProducts = new Promise ((resolve, reject) => {
-        setTimeout( () => {
-            if (categoryId) {
-                resolve(filterByCategory)
-            }
-            else {
-                resolve (products)
-            }
-        }, /*2000)
-    })*/
-
-    /*useEffect ( () => {
-        getProducts()
-        .then ((res) => {
-            setListProd(res)
-        })
-        
-        /*getProducts
-            .then ((res) => {
-                //console.log("Productos: ", res)
-                setListProd(res)}
-            })/*, [filterByCategory])*/
-
     useEffect ( () => {
         const queryCollection = collection ( db, "productos" )
         if ( categoryId ) {

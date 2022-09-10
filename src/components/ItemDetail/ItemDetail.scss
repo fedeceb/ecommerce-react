@@ -1,40 +1,34 @@
 .detail-container {
-    display: flex;
-    padding-left: 50px;
-    padding-right: 50px;
-    column-gap: 100px;
-
+    padding-top: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 .img-detail {
     margin-top: 100px;
 }
 
-.detail-content {
-    display: flex;
-    flex-direction: column;
-    margin-top: 75px;
-    padding-left: 300px;
-    h2 {
-        font-size: 40px;
-        margin-bottom: 50px;
-    }
-    span {
-        font-size: 25px;
-        margin-bottom: 25px;
-    }
+.h2-detail {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.span-detail {
+    font-size: 35px;
+    margin-bottom: 25px;
+}
 
-    .stock {
-        font-size: 15px;
-        border-top: none
-    }
-    p {
-        font-size: 20px;
-        border-top: 1px;
-        border-spacing: 15px;
-        border-top-style: solid;
-        border-top-color: gray;
-    }
+.stock {
+    margin-top: 15px;
+    font-size: 15px;
+    border-top: none
+}
+.pDescrition-detail {
+    font-size: 20px;
+    border-top: 1px;
+    border-spacing: 15px;
+    border-top-style: solid;
+    border-top-color: gray;
+    margin-top: 50px;
 }
 
 .btn-finCompra {
@@ -55,14 +49,15 @@
     }
 }
 
-.descripcion-compras {
+.pIcons-detail {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    column-gap: 15px;
+    justify-content: flex-start;
+    align-items: center;
     margin-top: 30px;
-    p {
-        font-size: 15px;
-        border-top-style: none;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+    font-size: 15px;
+    border-top-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }

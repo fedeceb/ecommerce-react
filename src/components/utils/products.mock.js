@@ -34,6 +34,9 @@ const products =
         price: 27499,
         description: "La Run Star Motion toma el ADN clásico de Converse y lo combina con una media suela innovadora y ultra moderna para redefinir por completo el estilo de la plataforma.",
         image: 'converse-run-star-motion-hi-cnvs-.jpg',
+        image1: 'converse-run-star-motion-hi-cnvs-1.jpg',
+        image2: 'converse-run-star-motion-hi-cnvs-2.jpg',
+        image3: 'converse-run-star-motion-hi-cnvs-3.jpg',
         stock: 5
     },
     {
@@ -43,6 +46,9 @@ const products =
         price: 26999,
         description: "Zapatillas de los 90 reinventadas con estilo futurista para crear estas zapatillas adidas Ozelia. Los colores neutros y un diseño fluido les dan un look verdaderamente unisex. Son tan cómodas que se siente como si estuvieras usando medias. Las clásicas 3 Tiras le ponen el toque final al look.",
         image: 'adidas-ozelia-.jpg',
+        image1: 'adidas-ozelia-1.jpg',
+        image2: 'adidas-ozelia-2.jpg',
+        image3: 'adidas-ozelia-3.jpg',
         stock: 3
     },
     {
@@ -115,6 +121,9 @@ const products =
         price: 40699,
         description: "La felicidad se renueva en el mundo del básquetbol gracias a las Zapatillas Nike Air Force 1 07 Se. Sus colores y parches divertidos florecen con detalles primaverales y agregan un aire de energía a tus días. Sus revestimientos cosidos, le dan un toque llamativo y resaltante y a la vez, te mantienen fiel al estilo de la marca. La amortiguación Nike Air creada originalmente para las pistas de básquet de alto rendimiento, agregan comodidad y ligereza. La entresuela de estas zapatillas de espuma Crater, te promete estabilidad y un look moteado. No importa si te vas a la universidad o a juntarte a tomar el té con amigas. Siempre estarás impecable con estas zapatillas.",
         image: 'adidas-forum-low.jpg',
+        image1: 'adidas-forum-low-1.jpg',
+        image2: 'adidas-forum-low-2.jpg',
+        image3: 'adidas-forum-low-3.jpg',
         stock: 3
     },
     {
@@ -124,6 +133,9 @@ const products =
         price: 22699,
         description: "El nuevo pro model de Louie Lopez, skater del team Converse, diseñado con las mejores características técnicas para máxima resistencia y un superior contacto con tu tabla. Con una construcción en suede reforzado, suela de tracción CONS, cordones de poliéster y algodón para extra durabilidad. Las Louie Lopez Pro te ofrecen la mejor durabilidad y comodidad sobre tu skate.",
         image: 'converse-louie-lopez-pro-ox.jpg',
+        image1: 'converse-louie-lopez-pro-ox-1.jpg',
+        image2: 'converse-louie-lopez-pro-ox-2.jpg',
+        image3: 'converse-louie-lopez-pro-ox-3.jpg',
         stock: 2
     },
     {
@@ -133,6 +145,9 @@ const products =
         price: 35599,
         description: "El estilo al aire libre se une a la moda callejera retro de los 90 en las Chuck 70 Utility. una pieza de TPU translúcido sobre la lona de algodón al estilo de las modernas botas de senderismo. Los revestimientos de goma envuelven la bota y el talón para brindar protección adicional contra los elementos. Acabado con una plantilla OrthoLite para mayor comodidad.",
         image: 'cnvrs-chuck-70-utility.jpg',
+        image1: 'cnvrs-chuck-70-utility-1.jpg',
+        image2: 'cnvrs-chuck-70-utility-2.jpg',
+        image3: 'cnvrs-chuck-70-utility-3.jpg',
         stock: 4
     },
     {
@@ -173,11 +188,14 @@ const products =
     },
     {
         id:20,
-        title: 'Adidas Supertstar',
+        title: 'Adidas Superstar',
         category: "adidas",
         price: 36799,
         description: "Las zapatillas Adidas Superstar no necesitan mucha presentación. Su historia hizo que dejen de ser un calzado para ser un ícono de la moda. Nacidas en los 70's para el básquet, fueron recorriendo el mundo urbano de la mano del skateboarding y principalmente el hip-hop. Estilo de sobra con el detalle de las tres tiras (three-stripes) típicas de la marca y su característica puntera de caucho.",
         image: 'adidas-super-star.jpg',
+        image1: 'adidas-super-star-1.jpg',
+        image2: 'adidas-super-star-2.jpg',
+        image3: 'adidas-super-star-3.jpg',
         stock: 5
     },
     {
@@ -244,6 +262,9 @@ const products =
         price: 40999,
         description: "Las Zapatillas adidas Zx 2K Boost 2.0 traen un diseño exclusivo de adidas que va a robarse todas las miradas. Gracias a su mediasuela Boost vas a sentir una comodidad superior y podes disfrutar de una amortiguación única. La capellada y suela asimétrica aportan un estilo urbano que podes lucir con tus mejores prendas para destacar tu outfit estés donde estés. Además, su fabricación colabora a tener un mundo más sustentable ya que están confeccionadas con algodón 100% reciclado.",
         image: 'adidas-ZX-2K-Boost-2.jpg',
+        image1: 'adidas-ZX-2K-Boost-2-1.jpg',
+        image2: 'adidas-ZX-2K-Boost-2-2.jpg',
+        image3: 'adidas-ZX-2K-Boost-2-3.jpg',
         stock: 2
     },
     {
