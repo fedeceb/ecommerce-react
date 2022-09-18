@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import ShoppingCartSharpIcon from '@mui/icons-material/ShoppingCartSharp';
 import { CartContext } from '../../context/CartContext';
+import { IconButton } from '@mui/material';
 
 const CartWidget = () => {
 
@@ -8,8 +9,11 @@ const CartWidget = () => {
 
     return (
         <div className='cart-widgets'>
-            {cart.length !== 0 && <p>{cart.length}</p>}
-            <ShoppingCartSharpIcon/>
+            <IconButton color="primary" aria-label="add to shopping cart">
+                {cart.length !== 0 && <span>{cart.length}</span>}
+                <ShoppingCartSharpIcon/>
+            </IconButton>
+            
         </div>
     )
 }

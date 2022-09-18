@@ -4,7 +4,6 @@
     float: left;
     width: 25%;
     height: 400px;
-    //box-shadow: 1px 1px 5px #afafaf47;
     border: 1px solid transparent;
     display: flex;
     align-items: center;
@@ -12,8 +11,9 @@
     justify-content: center;
     text-align: center;
     transition: all 0.3s ease-out;
+    padding-left: 15px;
+    padding-right: 15px;
     img {
-        //width:50%;
         height: 250px;
     }
     p {
@@ -27,8 +27,8 @@
 }
 .item-product:hover {
     box-shadow: 5px 5px 10px #afafaf47;
-    -webkit-transform-: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform-: scale(1);
+    transform: scale(1);
     opacity: 1;
 }
 

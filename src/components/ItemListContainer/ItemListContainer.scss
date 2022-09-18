@@ -1,14 +1,10 @@
 .container {
-    padding-top: 50px;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 100px;
+    padding-right: 100px;
     padding-bottom: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    row-gap: 35px;
-    column-gap: 25px;
 }
+
+
 
 .item-product * {
     text-decoration: none;

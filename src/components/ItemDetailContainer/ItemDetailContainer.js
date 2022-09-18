@@ -14,18 +14,9 @@ const ItemDetailContainer = () => {
     const {id} = useParams()
 
     useEffect ( () => {
-        //filterById ()
         getProduct ()
             .then ((res) => { setDetail (res) })
     }, [id])
-
-    /*const filterById = () => {
-        products.some ((products) => {
-            if(products.id == id) {
-                setDetail(products)
-            }
-        })
-    }*/
 
     const getProduct = async () => {
         const docRef = doc (db, 'productos', id)

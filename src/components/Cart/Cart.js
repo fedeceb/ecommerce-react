@@ -4,6 +4,8 @@ import { CartContext } from "../../context/CartContext"
 import ItemCart from "../ItemCart/ItemCart"
 import '../Cart/Cart.scss'
 import DatosDeCompraModal from "../ModalDatos/DatosDeCompra"
+import SwiperInfiniteLoop from "../Swiper.infinite-loop-slides-group/swiper"
+import { Grid } from "@mui/material" 
 
 const Cart = () => {
 
@@ -11,31 +13,38 @@ const Cart = () => {
 
     if (cart.length === 0) {
         return (
-            <div>
-                <p>No hay productos en el carrito</p>
-                <Link to='/productos'>Ver otros productos</Link>
-            </div>
+            <>
+                <div className="sin-prods">
+                    <p>NO HAY PRODUCTOS EN EL CARRITO</p>
+                    <Link to='/productos'><button className="btn-otrosProds">VER OTROS PRODUCTOS</button></Link>
+                </div>
+                <div className="sinProds-marcas">
+                    <h1> NAVEGÁ POR MARCAS </h1>
+                    <SwiperInfiniteLoop />
+                </div>
+            </>
         )
     }
 
     return (
         <>
-        <h1>TU CARRITO</h1>
         <div className="body-carrito">
-            <div className="detalle-carrito">
-                {cart.map(product => <ItemCart key={product.id} product={product} />)}
-                <button className="bnt-deleteAll" onClick={ () => clearCart([]) }>BORRAR CARRITO</button>
-            </div>
-            <div className="detalleTotal-carrito">
-                <h1>RESUMEN DEL PEDIDO</h1>
-                <div>
-                    <p>PRECIO TOTAL:</p>
-                    <button>CALCULAR ENVIO</button>
-                </div>
-                <div>
-                    <button> <DatosDeCompraModal>FINALIZAR COMPRA</DatosDeCompraModal> </button>
-                </div>
-            </div>
+            <h1>TU CARRITO</h1>
+                <Grid container spacing={6}>
+                    <Grid item lg={8}>
+                        {cart.map(product => <ItemCart key={product.id} product={product} />)}
+                        <button className="bnt-deleteAll" onClick={ () => clearCart([]) }>BORRAR CARRITO</button>
+                    </Grid>
+                    <Grid item lg={4}>
+                        <div className="detalleTotal-carrito">
+                            <h1>RESUMEN DEL PEDIDO</h1>
+                            <p>PRECIO TOTAL:</p>
+                            <div className="div-final">
+                                <button className="btn-fin"> <DatosDeCompraModal>FINALIZAR COMPRA</DatosDeCompraModal> </button>
+                            </div>
+                        </div>
+                    </Grid>
+                </Grid>
         </div>
         </>
         

@@ -1,11 +1,48 @@
+.sin-prods {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    p {
+        font-size: 25px;
+        color: black;
+    }
+    .btn-otrosProds {
+        font-size: 25px;
+        border: none;
+        height: 70px;
+        width: 400px;
+        transition: all 0.3s ease-in-out;
+    }
+    .btn-otrosProds:hover {
+        color: aqua;
+    }
+}
+
+.sin-prods * {
+    text-decoration: none;
+}
+
+.sinProds-marcas {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 75px;
+    padding-bottom: 100px;
+}
 
 
 .body-carrito{
-    display: flex;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
     padding-top: 50px;
-    column-gap: 50px;
+    padding-bottom: 50px;
+    h1 {
+        padding-bottom: 25px;
+    }
 }
 
 .detalle-carrito {
@@ -15,9 +52,26 @@
 
 }
 
-
 .detalleTotal-carrito {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 100%;
+    h1 {
+        padding-bottom: 25px;
+    }
+    p {
+        font-size: 18px;
+        padding-bottom: 15px;
+    }
+
+    .div-final {
+        padding-top: 25px;
+        .btn-fin {
+            width: 100%;
+        }
+        .btn-fin * {
+            color: black;
+        }
+    }
+
 }

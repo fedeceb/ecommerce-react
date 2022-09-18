@@ -1,18 +1,23 @@
 .item-cart{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
     border: 1px solid gray;
-    width: 80%;
+    width: 100%;
+    margin-bottom: 20px;
     img {
         width: 10%;
         border: 1px solid gainsboro;
     }
-    div {
-        display: flex;
-        column-gap: 50px;
-        align-items: center;
-        margin-left: 10%;
-        p {
-            font-size: 18px;
-        }
+}
+
+.item-contenido{
+    display: flex;
+    column-gap: 30px;
+    margin-right: auto;
+    margin-left: 15px;
+    p {
+        font-size: 16px;
     }
 }
 

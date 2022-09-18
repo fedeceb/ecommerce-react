@@ -1,9 +1,10 @@
 import './NavBar.scss'
 import CartWidget from './CartWidget'
-import IconSearch from './Search'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import Dropdown from '../Dropdown/dropdown'
+import { IconButton } from '@mui/material'
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 const NavBar = () => {
 
@@ -35,8 +36,7 @@ const NavBar = () => {
                     </ul>
                 </div>
                 <div className='icons-widget'>
-                    <IconSearch />
-                    <Link to="/cart" ><CartWidget className='cart-widget'/></Link> {/*por ahora se aplico a icono "carrito", pero debe aplicarse a buscqueda y perfil(registrarse)*/}
+                    <Link to="/cart" ><CartWidget className='cart-widget'/></Link>
                 </div>
             </div>
         </header>

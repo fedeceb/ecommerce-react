@@ -60,13 +60,17 @@ const Formulario = () => {
                 </>
             ) : (
                 <form onSubmit={submitData}>
-                <input 
+                <h4> NOMBRE Y APELLIDO </h4>
+                <input
                     type='text' 
                     name='name' 
                     placeholder='Ingrese el nombre'
                     onChange={handleChange}
                     value={formData.name} 
                 />
+                <br/>
+                <br/>
+                <h4> NÚMERO DE CONTACTO </h4>
                 <input 
                     type='number' 
                     name='phone' 
@@ -74,13 +78,18 @@ const Formulario = () => {
                     onChange={handleChange}
                     value={formData.phone}
                 />
+                <br/>
+                <br/>
+                <h4> MAIL </h4>
                 <input 
                     type='email' 
                     name='email' 
                     placeholder='Ingrese el mail'
                     onChange={handleChange}
                     value={formData.email}
-                />  
+                />
+                <br/>
+                <br/>  
                 <button> FINALIZAR </button>
             </form>
             )}
