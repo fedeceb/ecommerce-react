@@ -6,14 +6,15 @@ const CartProvider = ({ children }) => {
 
     const [cart, setCart] = useState([])
     const [totalPrice, setTotalPrice] = useState (0)
-    //const [totalProducts, setTotalProducts] = useState(0)
-    //console.log("el famoso carrito: ", cart)
+    const [totalProducts, setTotalProducts] = useState(0)
+    //console.log("totalAll: ", totalProducts)
 
     const addItem = (item, quantity) => {
         let newCart;
         let product = cart.find (product => product.id === item.id) //buscamos el producto
         if ( product ) {  //si se encuentra en el carrito
             //setTotalProducts(totalProducts + product.quantity)
+            setTotalProducts (totalPrice + parseInt(product.quantity) * parseFloat(product.price.slice(2)))
             product.quantity += quantity;  // que sume a la cantidad (del props) a la cantidad existente
             newCart = [ ...cart ];  // la info se guarda en el nuevo carrito
         }
@@ -34,6 +35,7 @@ const CartProvider = ({ children }) => {
 
     const isInCart = (id) => cart.find (product => product.id === id) ? true : false;
 
+
     return (
         <CartContext.Provider value={{
             cart,
@@ -42,10 +44,10 @@ const CartProvider = ({ children }) => {
             removeItem,
             clearCart,
             isInCart,
-            totalPrice
-            //totalProducts
+            totalProducts,
+            setTotalProducts
         }}>
-            {children} {/* -- es el resto de la aplicación -- */}
+            {children}
         </CartContext.Provider>
     )
 }

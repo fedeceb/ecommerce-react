@@ -23,7 +23,7 @@ function App() {
             <Route path='/productos' element={<Products />} />
             <Route path='/productos/:id' element={<Detail />} />
             <Route path='/category/:categoryId' element={<Marcas />}/> {/* desgloce de marcas */}
-            <Route path='/contact' element={<Contact />} />
+            <Route path='/contacto' element={<Contact />} />
             <Route path='/cart' element={<Checkout />} />
             <Route path='*' element={<h1>ERROR 404 - página no encontrada</h1>}/> {/*crear una pagina aparte para estos problemas*/}
           </Routes>

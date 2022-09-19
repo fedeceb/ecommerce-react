@@ -9,7 +9,7 @@ import { Grid } from "@mui/material"
 
 const Cart = () => {
 
-    const { cart, clearCart } = useContext (CartContext)
+    const { cart, clearCart, totalProducts} = useContext (CartContext)
 
     if (cart.length === 0) {
         return (
@@ -38,7 +38,7 @@ const Cart = () => {
                     <Grid item lg={4}>
                         <div className="detalleTotal-carrito">
                             <h1>RESUMEN DEL PEDIDO</h1>
-                            <p>PRECIO TOTAL:</p>
+                            <p>PRECIO TOTAL: {totalProducts} </p>
                             <div className="div-final">
                                 <button className="btn-fin"> <DatosDeCompraModal>FINALIZAR COMPRA</DatosDeCompraModal> </button>
                             </div>

@@ -22,7 +22,7 @@ const Formulario = () => {
         date: new Date().toLocaleString(),
         total: totalPrice
     })
-    console.log('order', order)
+    //console.log('order', order)
     
     const [formData, setFormData] = useState ({
         name: '',
@@ -31,10 +31,10 @@ const Formulario = () => {
     })
     
     const handleChange = (e) => {
-       console.log("valor de target", e.target.name)
+       //console.log("valor de target", e.target.name)
         setFormData ({...formData, [e.target.name] : e.target.value})
     }
-    console.log('form data', formData)
+    //console.log('form data', formData)
 
     const submitData = (e) => {
         e.preventDefault()
