@@ -44,7 +44,6 @@ const Footer = () => {
                             <li>WhatsApp</li>
                             <li>0800-333-SNKRS</li>
                         </ul>
-                        <button>Botón de Arrepentimiento</button>
                     </div>
                 </div>
             </footer>

@@ -33,7 +33,7 @@ const Cart = () => {
                 <Grid container spacing={6}>
                     <Grid item lg={8}>
                         {cart.map(product => <ItemCart key={product.id} product={product} />)}
-                        <button className="bnt-deleteAll" onClick={ () => clearCart([]) }>BORRAR CARRITO</button>
+                        <button className="bnt-deleteAll" onClick={ () => clearCart([])}>BORRAR CARRITO</button>
                     </Grid>
                     <Grid item lg={4}>
                         <div className="detalleTotal-carrito">

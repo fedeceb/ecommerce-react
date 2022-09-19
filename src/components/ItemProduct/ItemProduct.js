@@ -11,14 +11,16 @@ const ItemProduct = ({data}) => {
     }
 
     return (
-        <div className= "item-product">  
-            <Link to={`/productos/${id}`}>
-                <img src={`/assets/${image}`} />
-                <p>{title}</p>
+        <div className= "item-product">
+            <div className='img-product'>
+                <img src={`/assets/${image}`} /> 
+            </div>
+            <div className='item-description'>
+                <Link to={`/productos/${id}`}> <p>{title}</p> </Link>
                 <span>$ {price}</span>
-                <p>ENVIOS GRATIS</p>
-            </Link>
-            <button onClick={addToCart}>Agregar al carrito</button>
+                <p className='p-envios'>Envíos gratis</p>
+            </div> 
+            
         </div>
     )
 }

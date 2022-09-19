@@ -29,23 +29,28 @@
     border-top-style: solid;
     border-top-color: gray;
     margin-top: 50px;
+    padding-top: 25px;
 }
 
 .btn-finCompra {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 75px;
     margin-left: 25%;
-    margin-bottom: 50px;
+    margin-bottom: 75px;
     font-size: 20px;
     width: 50%;
     height: 50px;
-    background-color: #9792E3;
+    background-color: #020202;
     border: none;
+    transition: all 0.3s ease-in;
     a {
         text-decoration: none;
-        color: black;
+        color: white;
+    }
+    a:hover {
+        color: #f0f457;
     }
 }
 
