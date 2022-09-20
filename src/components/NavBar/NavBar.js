@@ -3,8 +3,6 @@ import CartWidget from './CartWidget'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import Dropdown from '../Dropdown/dropdown'
-import { IconButton } from '@mui/material'
-import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 const NavBar = () => {
 

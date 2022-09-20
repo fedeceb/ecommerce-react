@@ -49,3 +49,29 @@ body {
 .loopSwiper {
   width: 80%;
 }
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+
+  .swiper-slide .img-swiperLoop {
+    width: 110px;
+  }
+  .loopSwiper {
+    width: 90%;
+    height: 150px;
+  }
+  .swiper-button-prev:after, .swiper-button-next:after {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .loopSwiper {
+    width: 100%;
+    height: 100px;
+  }
+}
