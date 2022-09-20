@@ -28,12 +28,12 @@ const SwiperInfiniteLoop = () => {
         modules={[Pagination, Navigation]}
         className="loopSwiper"
       >
-        <SwiperSlide><Link to='/category/adidas'><img src={`/assets/logo-adidasoriginals.png`} /></Link></SwiperSlide>
-        <SwiperSlide><Link to='/category/converse'><img src={`/assets/logo-converse.png`} /></Link></SwiperSlide>
-        <SwiperSlide><Link to='/category/new-balance'><img src={`/assets/logo-nb.png`} /></Link></SwiperSlide>
-        <SwiperSlide><Link to='/category/nike'><img src={`/assets/logo-nike.png`} /></Link></SwiperSlide>
-        <SwiperSlide><Link to='/category/puma'><img src={`/assets/logo-puma.png`} /></Link></SwiperSlide>
-        <SwiperSlide><Link to='/category/vans'><img src={`/assets/logo-vans.jpg`} /></Link></SwiperSlide>
+        <SwiperSlide><Link to='/category/adidas'><img className="img-swiperLoop" src={`/assets/logo-adidasoriginals.png`} /></Link></SwiperSlide>
+        <SwiperSlide><Link to='/category/converse'><img className="img-swiperLoop" src={`/assets/logo-converse.png`} /></Link></SwiperSlide>
+        <SwiperSlide><Link to='/category/new-balance'><img className="img-swiperLoop" src={`/assets/logo-nb.png`} /></Link></SwiperSlide>
+        <SwiperSlide><Link to='/category/nike'><img className="img-swiperLoop" src={`/assets/logo-nike.png`} /></Link></SwiperSlide>
+        <SwiperSlide><Link to='/category/puma'><img className="img-swiperLoop" src={`/assets/logo-puma.png`} /></Link></SwiperSlide>
+        <SwiperSlide><Link to='/category/vans'><img className="img-swiperLoop" src={`/assets/logo-vans.jpg`} /></Link></SwiperSlide>
       </Swiper>
     </>
   );

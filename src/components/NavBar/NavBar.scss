@@ -50,16 +50,13 @@ header {
                 transition: all 0.3s ease-in;
                 cursor: pointer;
             }
-
             li button:hover {
                 color: #f0f457;
 
             }
-
             li .marcas-action {
                 display: none;
             }
-
             li .marcas-action:hover button {
                 display: block;
             }
@@ -71,7 +68,6 @@ header {
         align-items: center;
         column-gap: 25px;
         margin-top: 25px;
-
         .cart-widget {
             display: flex;
             align-items: center;
@@ -81,6 +77,91 @@ header {
     }
 }
 
+/* ------------------------------------------- */
+
+// MEDIA QUERIES
+
+// NavBar
+
+@media screen and (max-width: 1280px) {
+
+    .sub-marcas {
+        display: flex !important;
+        flex-direction: column !important;
+        row-gap: 10px;
+        background-color: #020202;
+        margin-left: 9px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        z-index: 100;
+        margin-left: 10px;
+    }
+}
 
 
+@media screen and (max-width: 992px) {
 
+    .dh-container {
+        padding-left: 0px;
+        padding-right: 50px;
+        column-gap: 80px;
+    }
+    .sub-marcas {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        height: 210px;
+    }
+    .dh-container {
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .dh-anuncio {
+        .p-anuncio {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    header {
+        height: 200px;
+    }
+    .p-anuncio {
+        font-size: 14px;
+    }
+    .dh-container {
+        flex-direction: column;
+        column-gap: 0px;
+        padding-right: 0px;
+        align-items: center;
+        .dh-brand {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+
+    .dh-list {
+        ul {
+            li button {
+                font-size: 16px;
+            }
+        }
+    }
+    .dh-anuncio {
+        .p-anuncio {
+            font-size: 10px;
+        }
+    }
+    
+}

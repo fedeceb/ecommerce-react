@@ -29,7 +29,7 @@ const DestacadosConitainer = () => {
 
     return (
         <>
-        <div className='container'>
+        <div>
             <ItemList dataProds={listProd}/>
         </div>
         </>

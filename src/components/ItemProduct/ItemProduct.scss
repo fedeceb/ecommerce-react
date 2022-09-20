@@ -9,17 +9,20 @@
     justify-content: center;
     text-align: center;
     transition: all 0.3s ease-out;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 65px;
+    //margin-right: 15px;
     .img-product {
         display: flex;
         justify-content: center;
         img {
-            height: 250px;
+            height: 290px;
         }
     }
     p {
         font-size: 18px;
+        margin-top: 5px;
         margin-bottom: 10px;
     }
     span {
@@ -109,4 +112,123 @@
 
 .btn-addCarrito:hover {
     color: #f0f457;
+}
+
+/* ------------------------------------------- */
+
+// MEDIA QUERIES
+
+// Item Product
+
+
+@media screen and (max-width: 1280px) {
+    .item-product {
+        width: 30%;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+        .img-product {
+            img {
+                height: 250px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .item-product {
+        width: 27%;
+        margin-left: 25px;
+        .img-product {
+            img {
+                height: 165px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .item-product {
+        width: 36%;
+        margin-left: 25px;
+        margin-right: 25px;
+        height: 300px;
+        .img-product {
+            img {
+                height: 150px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+
+    .item-product {
+        width: 40%;
+        margin-left: 15px;
+        margin-right: 15px;
+        height: 250px;
+        .img-product {
+            img {
+                height: 120px;
+            }
+        }
+        p {
+            font-size: 14px;
+        }
+        span {
+            font-size: 14px
+        };
+    }
+}
+
+/*  Item Count  */
+
+@media screen and (max-width: 1280px) {
+    
+    .btn-addCarrito {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .countProd {
+        margin-top: 20px;
+        flex-direction: row;
+        p {
+            font-size: 18px;
+        }
+        button {
+            font-size: 18px;
+            margin: 15px;
+        }
+    }
+
+    .btn-contador {
+        width: 80%;
+    }
+
+    .btn-addCarrito {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+
+    .countProd {
+        margin-top: 10px;
+        flex-direction: column;
+        p {
+            font-size: 16px;
+        }
+        button {
+            font-size: 16px;
+            margin: 15px;
+        }
+    }
 }

@@ -22,7 +22,7 @@ const Formulario = () => {
         date: new Date().toLocaleString(),
         total: totalPrice
     })
-    //console.log('order', order)
+    console.log('order', order)
     
     const [formData, setFormData] = useState ({
         name: '',
@@ -31,7 +31,7 @@ const Formulario = () => {
     })
     
     const handleChange = (e) => {
-       //console.log("valor de target", e.target.name)
+       console.log("valor de target", e.target.name)
         setFormData ({...formData, [e.target.name] : e.target.value})
     }
     //console.log('form data', formData)
@@ -46,7 +46,7 @@ const Formulario = () => {
         const collectionOrder = collection (db, 'ordenes')
         const orderDoc = await addDoc (collectionOrder, newOrder)
         setSucess (orderDoc.id)
-        console.log('ORDEN GENERADA', orderDoc)
+        //console.log('ORDEN GENERADA', orderDoc)
     }
 
     return (

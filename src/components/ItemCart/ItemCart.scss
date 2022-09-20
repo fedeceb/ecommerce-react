@@ -31,3 +31,26 @@
     border: none;
 }
 
+
+/* ------------------------------------------- */
+
+// MEDIA QUERIES
+
+@media screen and (max-width: 1280px) {
+
+    .item-contenido{
+        align-items: center;
+    }
+}
+
+/*@media screen and (max-width: 576px) {
+
+    .item-contenido{
+        column-gap: 10px;
+        align-items: center;
+        p {
+            font-size: 15px;
+        }
+    }
+}*/
+

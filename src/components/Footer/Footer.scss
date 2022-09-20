@@ -1,5 +1,5 @@
 footer {
-    height: 300px;
+    //height: 300px;
     width: 100%;
     background-color: #020202;
     padding-top: 50px;
@@ -17,6 +17,8 @@ footer {
         .h2-footer {
             margin-left: 0px;
             color: white;
+            border-bottom: 1px solid;
+            padding-bottom: 5px;
         }
         ul {
             margin-top: 35px;
@@ -35,7 +37,7 @@ footer {
                 transition: all 0.3s ease;
             }
             a:hover {
-                color: #7CFEF0;
+                color: #F0F757;
                 padding-left: 8px;
             }
         }
@@ -43,5 +45,66 @@ footer {
             margin-top: 10px;
             color: white;
         }
+    }
+}
+
+
+/* ------------------------------------------- */
+
+// MEDIA QUERIES
+
+// Footer
+
+@media screen and (max-width: 1280px) {
+
+    footer {
+        padding-top: 35px;
+    }
+
+    .f-container {
+        padding-left: 50px;
+        padding-right: 50px;
+        column-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .f-container {
+        padding-left: 100px;
+        padding-right: 100px;
+        column-gap: 75px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .f-container {
+        flex-direction: column;
+    }
+
+    .h2-footer {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+
+    .f-container {
+        flex-direction: column;
+        padding-left: 50px;
+        padding-right: 30px;
+        .d-infoFooter {
+            ul {
+                margin-top: 25px;
+            }
+        }
+        .h2-footer {
+            border-bottom: 1px solid;
+            padding-bottom: 5px;
+        }
+        
     }
 }

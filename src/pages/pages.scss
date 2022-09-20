@@ -16,13 +16,126 @@
 }   
 
 .destacados {
+    padding-left: 150px;
+    padding-right: 150px;
     padding-bottom: 100px;
 }
 
 /* pag. Products */
 
+.prod-container {
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 100px;
+}
+
 .h1-pproducts {
     padding-left: 100px;
     padding-top: 50px;
     padding-bottom: 25px;
+}
+
+/* pag. Detail */
+
+.detail-container {
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+
+/* ------------------------------------------- */
+
+// MEDIA QUERIES
+
+// Pag. Home
+
+@media screen and (max-width: 1280px) {
+
+    .destacados {
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .destacados {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .swiper-carrousel {
+        padding-bottom: 50px;
+    }
+    .swiper-infiniteloop {
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+
+    .homeMarcas {
+            font-size: 25px;
+    } 
+    .destacados {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* pag. Products */
+
+@media screen and (max-width: 768px) {
+
+    .prod-container {
+        padding-left: 50px;
+        padding-right: 50px;
+    } 
+
+    .h1-pproducts {
+        padding-left: 50px;
+        padding-bottom: 0px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+
+    .prod-container {
+        padding-left: 10px;
+        padding-right: 10px;
+    } 
+
+    .h1-pproducts {
+        padding-left: 10px;
+        font-size: 25px;
+    }
+}
+
+
+/* pag. Detail */
+
+@media screen and (max-width: 1280px) {
+
+    .detail-container {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .detail-container {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .detail-container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }

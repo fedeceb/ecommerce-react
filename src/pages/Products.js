@@ -2,11 +2,9 @@ import ItemListContainer from "../components/ItemListContainer/ItemListContainte
 
 const Products = () => {
     return (
-        <div>
+        <div className="prod-container">
             <h1 className="h1-pproducts">TODOS LOS PRODUCTOS</h1>
             <ItemListContainer section="Todos los productos"/>
-            {/*<ItemListContainer section="Productos de temporada"/>*/}
-            {/*<ItemListContainer section="Productos más comprados"/>*/}
         </div>
     )
 }
