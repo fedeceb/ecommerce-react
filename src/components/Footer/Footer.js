@@ -39,11 +39,15 @@ const Footer = () => {
                     <div className='d-infoFooter'>
                         <h2 className='h2-footer'>Centro de atención al cliente</h2>
                         <p>Lunes a Viernes de 9 a 20hs / Sábados de 9 a 17 hs.</p>
-                        <ul>
-                            <li>Contacto</li>
-                            <li>WhatsApp</li>
-                            <li>0800-333-SNKRS</li>
-                        </ul>
+                        <div className='d-footer-img'>
+                            <ul>
+                                <li>Contacto</li>
+                                <li>WhatsApp</li>
+                                <li>0800-333-SNKRS</li>
+                                <li><img src={`/assets/snrks.png`} /></li>
+                            </ul>
+                        </div>
+                        
                     </div>
                 </div>
             </footer>

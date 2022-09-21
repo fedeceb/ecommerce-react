@@ -45,7 +45,15 @@ footer {
             margin-top: 10px;
             color: white;
         }
+        .d-footer-img {
+            display: flex;
+            flex-direction: column;
+            ul li img {
+                width: 25%;
+            }
+        }
     }
+    
 }
 
 

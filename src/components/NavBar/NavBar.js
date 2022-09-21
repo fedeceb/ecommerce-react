@@ -17,7 +17,7 @@ const NavBar = () => {
             </div>
             <div className='dh-container'>
                 <div className='dh-brand'> 
-                    <Link to="/"><h1>SNKRS&+</h1></Link>
+                    <Link to="/"><img src={`/assets/snrks.png`}/></Link>
                 </div>
                 <div className='dh-list'>
                     <ul>

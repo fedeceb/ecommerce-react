@@ -18,12 +18,11 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    column-gap: 100px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
 
     .dh-brand {
-        font-size: 30px;
+        /*font-size: 30px;
         margin-left: 50px;
         display: flex;
         align-items: center;
@@ -31,6 +30,10 @@ header {
             text-decoration: none;
             color: white;
             margin-top: 10px;
+        }*/
+        img {
+            margin-top: 15px;
+            width: 80%;
         }
     }
 
@@ -42,6 +45,7 @@ header {
             list-style: none;
             column-gap: 50px;
             margin-top: 15px;
+            margin-left: -300px;
             li button {
                 font-size: 18px;
                 border: none;
@@ -101,6 +105,11 @@ header {
 
 @media screen and (max-width: 1280px) {
 
+
+    .dh-container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
     .sub-marcas {
         display: flex !important;
         flex-direction: column !important;
@@ -118,10 +127,11 @@ header {
 
 @media screen and (max-width: 992px) {
 
-    .dh-container {
-        padding-left: 0px;
-        padding-right: 50px;
-        column-gap: 80px;
+    header {
+        height: 130px;
+    }
+    .dh-container .dh-brand img {
+        width: 65%;
     }
     .sub-marcas {
         margin-left: 10px;
@@ -130,50 +140,37 @@ header {
 
 @media screen and (max-width: 768px) {
 
-    header {
-        height: 200px;
-    }
     .dh-container {
-        flex-direction: row;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        align-items: center;
-        padding-right: 0px;
-        column-gap: 40px;
+        padding-left: 25px;
+        padding-right: 25px;
+        .dh-list {
+            ul {
+                margin-left: -190px;
+            }
+        }
     }
     .dh-anuncio {
         .p-anuncio {
             font-size: 14px;
         }
     }
-    .dh-list {
-        ul {
-            margin-left: 190px;
-        }
-    }
 }
 
 @media screen and (max-width: 576px) {
 
-    header {
-        height: 180px;
-    }
-    .p-anuncio {
-        font-size: 14px;
-    }
     .dh-container {
-        column-gap: 80px;
-        .dh-brand {
-            font-size: 20px;
-            h1 {
-                margin-left: -50px;
-                margin-top: 15px;
-            }
+        .dh-brand img {
+            width: 45%;
+            margin-top: 20px;
         }
-    }
-    .dh-list {
-        ul {
-            margin-left: 00px;
+        .dh-list {
+            ul {
+                column-gap: 30px;
+                margin-left: -240px;
+                li button {
+                    font-size: 16px;
+                }
+            }
         }
     }
 }
@@ -182,14 +179,7 @@ header {
 
 
     header {
-        height: 170px;
-    }
-    .dh-list {
-        ul {
-            li button {
-                font-size: 16px;
-            }
-        }
+        height: 165px;
     }
     .dh-anuncio {
         .p-anuncio {
@@ -197,17 +187,28 @@ header {
         }
     }
     .dh-container {
-        column-gap: 10px;
-        .dh-brand h1 {
-            margin-left: -50px;
+        padding-left: 0px;
+        padding-right: 0px;
+        column-gap: 0px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: baseline;
+        .dh-brand img {
+            margin-left: 100px;
+            margin-top: 10px;
         }
         .dh-list {
             ul {
-                column-gap: 40px;
-                li button {
+                margin-top: 0px;
+                margin-left: 15px;
+            }
+            li button {
                     font-size: 16px;
-                }
+            }
+            .sub-marcas {
+                margin-top: 10px;
             }
         }
+        
     }
 }

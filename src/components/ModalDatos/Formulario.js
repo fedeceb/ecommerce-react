@@ -6,7 +6,7 @@ import { collection, addDoc } from "firebase/firestore"
 
 const Formulario = () => {
 
-    const { cart, totalPrice } = useContext (CartContext)
+    const { cart, totalProducts } = useContext (CartContext)
 
     const [sucess, setSucess] = useState ()
 
@@ -20,7 +20,7 @@ const Formulario = () => {
         }),
         buyer: {},
         date: new Date().toLocaleString(),
-        total: totalPrice
+        total: totalProducts
     })
     console.log('order', order)
     
