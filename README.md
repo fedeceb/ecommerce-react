@@ -11,3 +11,6 @@ Se utilizó MATERIAL UI y SWIPER JS.
 
 ## Problemas sin poder resolver:
     - Total de productos a comprar
+
+
+## Gift de funcionamiento
